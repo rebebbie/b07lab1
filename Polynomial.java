@@ -16,8 +16,16 @@ public class Polynomial{
 	}
 
 	public Polynomial add(Polynomial poly){
-		for(int i=0; i<coefficients.length; i++){
-			poly.coefficients[i] += coefficients[i];
+		if(poly.length > coefficients.length){
+			for(int i=0; i<coefficients.length; i++){
+				poly.coefficients[i] += coefficients[i];
+			}
+		}
+		else
+		{
+			for(int i=0; i<poly.length; i++){
+				poly.coefficients[i] += coefficients[i];
+			}
 		}
 
 		return poly;
