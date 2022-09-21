@@ -44,7 +44,7 @@ public class Polynomial{
 	public boolean hasRoot(double x){
 		double ans = evaluate(x);
 
-		if (ans==0){
+		if (ans==0.0){
 			return true;
 		}
 		return false;
