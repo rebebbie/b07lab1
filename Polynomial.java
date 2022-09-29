@@ -103,7 +103,7 @@ public class Polynomial{
 		
 		for(int i=0; i<poly.powers.length; i++) {
 			for(int j=0; j<powers.length; j++) {
-				if(powers[i] == powers[j]) {
+				if(poly.powers[i] == powers[j]) {
 					listCoeff.add(coefficients[j]+poly.coefficients[i]);
 					listPow.add(powers[j]+poly.powers[i]);
 				}
